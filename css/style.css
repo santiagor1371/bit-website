@@ -1,25 +1,79 @@
 * {
     box-sizing: border-box;
+    text-decoration: none;
 }
 
 body {
     color: #3F3F3F;
     font-family: "Inter", sans-serif;
+    margin: 0;
+    width: 1024px;
+    height: 512px;
+    
+}
+
+header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
 }
 
 
-.navegador{
+.logo{
+    display: flex;
+    align-items: self-start;
+    size: 200px;
+    padding-left: 30px;
+    padding-top: 40px;
+}
+
+nav a{
+    font-weight: 700;
+    padding-right: 50px;
     font-family: "Koulen", sans-serif;
-    font-size: 22px;
-    text-align: center;
+    color: #3F3F3F;
+    font-size: 20px;
+}
+
+nav a:hover{
+    color: #0583F2;
 }
 
 
-.titulo{
-    color: #ffffff;
+
+.santiago{
+    font-family: "Koulen", sans-serif;
+    font-size: 90px;
+    margin: 0%;
+    padding: 0%;
+    padding-top: 50px;
+    margin-bottom: -40px;
+    margin-left: 30px;
+}
+
+.box{
+    width: 545px;
+    height: 73px;
     background-color: #BF0404;
+    border-radius: 0px 60px 60px 0px;
     font-family: "Koulen", sans-serif;
-    font-size: 96px;
+    font-size: 90px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.retavizca{
+    font-family: "Koulen", sans-serif;
+    font-size: 90px;
+    margin: 0%;
+    padding: 0%;
+    margin-top: -35px;
+    margin-left: 30px;
 }
 
 .color{
@@ -30,9 +84,22 @@ body {
     color: #3F3F3F;
 }
 
-h1{
-    padding-left: 2%;
-    padding-top: 2%;
-    padding-bottom: 2%;
+.imagen-santi{
+    display: flex;
+    justify-content: end;
+    align-items: end;
+
 }
 
+.texto-principal{
+    width: 50%;
+}
+
+.proyectos{
+    font-family: "Koulen", sans-serif;
+    font-size: 80px;
+}
+
+.video{
+    width: 400px; 
+}
