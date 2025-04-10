@@ -3,9 +3,14 @@
     text-decoration: none;
 }
 
+:root {
+    --primario-color: #3f3f3f;
+    --secondario-color: rgb(21, 120, 178);
+  }
+
 body{
     width: 1440px;
-    color: #3F3F3F;
+    color: var(--primario-color);
     font-family: "Inter", sans-serif;
     margin: 0;
     display: flex;
@@ -230,7 +235,12 @@ nav a:hover{
     width: 100%;
     width: 1000px;
     margin: auto;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
+}
+
+.titulo-de-formulario{
+    width: 100%;
+    text-align: center;
 }
 
 footer{
