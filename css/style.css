@@ -1,6 +1,8 @@
-* {
-    box-sizing: border-box;
-    text-decoration: none;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  text-decoration: none;
 }
 
 :root {
@@ -9,17 +11,12 @@
   }
 
 body{
-    width: 1440px;
+    width: 100%;
     color: var(--primario-color);
     font-family: "Inter", sans-serif;
     margin: 0;
     display: flex;
     flex-wrap: wrap;
-}
-
-#responsive{
-    max-width: 100%;
-    height: auto;
 }
 
 header, footer, main, aside{
@@ -236,6 +233,40 @@ nav a:hover{
     width: 1000px;
     margin: auto;
     margin-bottom: 5%;
+}
+
+.container{
+    border: solid 2px #000000;
+    display: flex;
+    min-height: 400px;
+    margin-left: 50%;
+}
+
+table{
+    color: white;
+    font-size: 15px;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+thead{
+    background-color: #000000;
+}
+
+th{
+    padding: 20px 15px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+td{
+    padding: 15px;
+    border-bottom: solid 1px black;
+}
+
+tbody{
+    text-align: center;
+    color: rgb(0, 0, 0);
 }
 
 .titulo-de-formulario{
