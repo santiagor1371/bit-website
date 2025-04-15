@@ -23,7 +23,8 @@
             <a href="#botton" class="nav-link">REDES SOCIALES</a>
         </nav>
     </header>
-    
+
+<!-- mi descripcion -->
     <main>
         <div class="descripcion">
             <h1 class="santiago">santiago</h1>
@@ -46,37 +47,26 @@
             <img src="./assets/santi.png" alt="foto">
         </div>
     </main>
-    
+
+<!-- descricion de bandas -->
     <aside>
         <div class="banner"><img src="./assets/banner.png" alt="diseño"></div>
-        
         <h2 class="bandas" id="gusto-musical">BANDAS MUSICALES</h2>
-        
         <img src="./assets/bandas/bg.png" alt="bg" class="bg1">
-
         <img src="./assets/bandas/jinjer.png" alt="jinjer" class="imagen-jinjer">
-
         <h3 class="jinjer">JINJER</h3>
-
         <p class="texto-jinjer">Es una banda ucraniana de groove metal formada en el año 2009. Desde su formación han editado seis discos de estudio. La vocalista, Tatiana Shmaylyuk, es conocida por su técnica vocal. En menos de 10 años, la agrupación ha forjado su propio lugar en la escena del metal, participando en festivales importantes de metal alrededor del mundo, entre ellos el Wacken Open Air.</p>
-
         <audio controls src="./assets/jinjer.mp3" class="audio1"></audio>
-
-
         <img src="./assets/bandas/bg2.png" alt="bg" class="bg2">
-
         <img src="./assets/bandas/mastodon.png" alt="mastodon" class="img-mastodon"> 
 
-
         <h3 class="mastodon">MASTODON</h3>
-
         <p class="texto-mastodon">Mastodon es una banda estadounidense de metal progresivo fundada el 13 de enero de 1999 por los guitarristas Brent Hinds y Bill Kelliher, el batería Brann Dailor y el bajista Troy Sanders en Atlanta. Aunque comenzaron como quinteto, con el vocalista Eric Saner, la banda se caracteriza por ser un cuarteto en el que los miembros comparten las labores vocales en los distintos temas.</p>
-
         <audio controls src="./assets/mastodon.mp3" class="audio2"></audio>
-
         <h2 class="otras-bandas">OTRAS BANDAS</h2>
-
         <img src="./assets/bandas/otras-bandas.png" alt="bandas de metal" class="logos-bandas">
+
+<!-- tabla de las bandas que me gustan -->
 
         <div class="container">
             <table>
@@ -119,20 +109,27 @@
             </table>
         </div>
 
-
-        <h3 class="titulo-de-formulario">¿Que tipo de música escuchas?</h3>
-        <form>
-            <label for="name">Nombre del artista</label>
-            <input type="text" id="name" placeholder="Ejemplo:AC/DC" required />
-            
-            <label for="numero">¿Desde que año lo escuchas?</label>
-            <input type="number">
-
-            <label for="Comentario">¿Lo recomendarías?¿Por qué?</label>
-            <input type="coment">
-
-            <input type="submit" value="Send" />
-        </form>
+<!-- formulario para que dejen un comentario -->        
+        <div>
+            <h3 class="titulo-de-formulario">¿Que tipo de musica escuchas?</h3
+        ></div>
+        <div class="formulario">
+            <form>
+                <div class="nombre-del-artista">
+                    <label for="name">Nombre del artista:</label>
+                    <input type="text" id="name" placeholder="AC/DC" required />
+                </div>
+                <div class="pregunta-formulario">
+                    <label for="numero">Desde que año lo escuchas?</label>
+                    <input type="number" placeholder="2021">
+                </div>
+                <div class="comentario-formulario">
+                    <label for="Comentario">Lo recomendarias? Por que?</label>
+                    <input type="coment" placeholder="Comentario">
+                </div >
+                <input type="submit" value="Send"/>
+            </form>
+        </div>
 
     </aside>
     
