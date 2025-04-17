@@ -410,6 +410,9 @@ footer{
   .santiago, .retavizca{
     font-size: 70px;
   }
+  aside{
+    width: 100%;
+  }
   nav a{
     padding: 0;
     font-size: 30px;
@@ -437,6 +440,14 @@ footer{
 
   .bandas, .otras-bandas, .titulo-de-formulario {
     font-size: 60px;
+  }
+
+  .bg1,
+  .bg2 {
+    display: none;
+  }
+  .bandas{
+    margin-bottom: -10px;
   }
 
   .imagen_jinjer{
@@ -483,6 +494,68 @@ footer{
     padding: 10px 5px;
     font-size: 14px;
   }
+  .formulario {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+
+  .nombre-del-artista,
+  .pregunta-formulario,
+  .comentario-formulario {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .nombre-del-artista input,
+  .pregunta-formulario input,
+  .comentario-formulario input {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  input[type="submit"] {
+    width: 100%;
+    margin-left: 0;
+    font-size: 18px;
+  }
+
+  .titulo-de-formulario {
+    font-size: 28px;
+    text-align: center;
+    margin-left: 0;
+  }
+
+  .titulo-de-contacto {
+    font-size: 40px;
+    margin-top: 100px;
+  }
+
+  .titulo-de-contacto-2 {
+    font-size: 24px;
+    margin-top: 10px;
+  }
+
+  .texto-de-contacto {
+    font-size: 16px;
+    width: 90%;
+  }
+
+  .boton-contacto {
+    font-size: 18px;
+    padding: 8px 20px;
+    margin-bottom: 50px;
+  }
+
+  .iconos {
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .iconos img {
+    width: 30px;
+  }
 }
 
 /*responsive 768px*/
@@ -498,6 +571,11 @@ footer{
       height: auto;
       padding: 20px;
     }
+    nav a{
+        padding: 0;
+        font-size: 30px;
+        margin: 0;
+      }
   
     nav {
       display: flex;
@@ -539,14 +617,17 @@ footer{
   
     .imagen-jinjer, .img-mastodon,
     .audio1, .audio2,
-    .texto-jinjer, .texto-mastodon,
-    .bg1, .bg2 {
+    .texto-jinjer, .texto-mastodon{
       width: 90%;
       margin: 20px auto;
       height: auto;
       margin-left: auto;
       margin-right: auto;
     }
+
+    .bg1,
+    .bg2 {
+      display: none;
   
     .jinjer, .mastodon {
       font-size: 32px;
@@ -624,42 +705,216 @@ footer{
       justify-content: center;
       gap: 20px;
     }
-  
+
+    .titulo-de-contacto {
+        font-size: 50px;
+      }
+    
+    .titulo-de-contacto-2 {
+        font-size: 30px;
+      }
+    
+    .texto-de-contacto {
+        font-size: 18px;
+        width: 90%;
+      }
+    
+    .boton-contacto {
+        font-size: 20px;
+        padding: 10px 20px;
+      }
+    
+    .iconos img {
+        width: 35px;
+      }
   }
 
 /*responsive 992px*/
 
-  @media (max-width: 992px) {
+@media screen and (max-width: 992px) {
     .logo {
       padding-left: 10px;
       padding-top: 10px;
     }
   
+    header {
+      padding: 10px 20px;
+    }
+  
+    nav a {
+      padding-right: 20px;
+      font-size: 18px;
+    }
+  
+    .santiago,
+    .retavizca {
+      font-size: 70px;
+      margin-left: 20px;
+    }
+  
     .box {
+      width: 80%;
       font-size: 60px;
+      margin-left: 20px;
+    }
+  
+    .dis {
+      font-size: 30px;
+      margin-left: 20px;
     }
   
     .texto-principal {
       width: 90%;
       margin-left: 5%;
+      font-size: 18px;
     }
   
-    .formulario {
-      margin-left: 0;
+    .imagen-santi {
+      width: 100%;
     }
   
-    .titulo-de-formulario {
+    .bandas,
+    .otras-bandas {
+      font-size: 60px;
       margin-left: 0;
       text-align: center;
     }
   
-    .nombre-del-artista input,
-    .comentario-formulario input {
+    .imagen-jinjer,
+    .img-mastodon,
+    .audio1,
+    .audio2 {
       width: 80%;
+      margin: 20px auto;
+      height: auto;
+    }
+  
+    .jinjer,
+    .mastodon {
+      font-size: 36px;
+      width: 80%;
+      border-radius: 40px;
+      margin: 10px auto;
+    }
+  
+    .texto-jinjer,
+    .texto-mastodon {
+      width: 90%;
+      margin: 20px auto;
+      font-size: 16px;
+      text-align: justify;
+    }
+  
+    .logos-bandas {
+      width: 90%;
+      margin: auto;
+    }
+  
+    .container {
+      width: 90%;
+      margin: 40px auto;
+      flex-direction: column;
+      overflow-x: auto;
+    }
+  
+    table {
+      width: 100%;
+      font-size: 14px;
+    }
+  
+    th,
+    td {
+      padding: 12px;
+    }
+  
+    .titulo-de-formulario {
+      font-size: 40px;
+      margin-left: 0;
+      text-align: center;
+    }
+  
+    .formulario {
+      flex-direction: column;
+      margin: auto;
+      align-items: center;
+      padding: 0 20px;
+    }
+  
+    .nombre-del-artista input,
+    .pregunta-formulario input,
+    .comentario-formulario input {
+      width: 100%;
+      font-size: 16px;
     }
   
     input[type="submit"] {
-      width: 80%;
-      margin-left: 10%;
+      width: 100%;
+      margin-left: 0;
     }
-  }
+  
+    footer {
+      font-size: 20px;
+      padding: 20px;
+    }
+  
+    .titulo-de-contacto {
+      font-size: 60px;
+      margin-top: 150px;
+      text-align: center;
+    }
+  
+    .titulo-de-contacto-2 {
+      font-size: 40px;
+      text-align: center;
+      margin-left: 0;
+      margin-top: 20px;
+    }
+  
+    .texto-de-contacto {
+      width: 90%;
+      margin: 20px auto;
+      font-size: 18px;
+      text-align: center;
+    }
+  
+    .boton-contacto {
+      font-size: 24px;
+      margin: 30px auto;
+      display: block;
+    }
+  
+    .iconos {
+      justify-content: center;
+      gap: 20px;
+    }
+    .titulo-de-contacto {
+        font-size: 40px;
+        margin-top: 100px;
+      }
+    
+      .titulo-de-contacto-2 {
+        font-size: 24px;
+        margin-top: 10px;
+      }
+    
+      .texto-de-contacto {
+        font-size: 16px;
+        width: 90%;
+      }
+    
+      .boton-contacto {
+        font-size: 18px;
+        padding: 8px 20px;
+        margin-bottom: 50px;
+      }
+    
+      .iconos {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+    
+      .iconos img {
+        width: 30px;
+      }
+}
+}
