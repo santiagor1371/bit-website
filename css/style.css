@@ -421,7 +421,6 @@ footer{
     width: 100%;
     border-radius: 0px 0px 0px 0px;
     margin: 0;
-
   }
 
   .texto-principal{
@@ -433,11 +432,15 @@ footer{
   }
 
   .texto-principal, .texto-jinjer, .texto-mastodon {
-    font-size: 16px;
+    font-size: 20px;
   }
 
   .bandas, .otras-bandas, .titulo-de-formulario {
-    font-size: 30px;
+    font-size: 60px;
+  }
+
+  .imagen_jinjer{
+    margin-top: -600px;
   }
 
   .jinjer, .mastodon {
@@ -463,6 +466,22 @@ footer{
 
   .iconos img {
     width: 30px;
+  }
+  .container {
+    width: 100%;
+    overflow-x: auto;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 10px;
+  }
+
+  table {
+    width: 600px; /* mayor que el ancho del contenedor para permitir scroll */
+  }
+
+  th, td {
+    padding: 10px 5px;
+    font-size: 14px;
   }
 }
 
